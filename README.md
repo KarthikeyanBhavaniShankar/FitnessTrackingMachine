@@ -35,3 +35,11 @@ Frontend (HTML/CSS/JS)
 FastAPI Backend
         ↓
 SQLite Database
+
+How to test the app:
+
+👉 **Open the web app:**  
+http://127.0.0.1:8000/app
+
+> Apple Fitness–inspired personal fitness tracker with animated activity rings, goal tracking, and analytics dashboard.
+
