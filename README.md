@@ -14,12 +14,15 @@ A full-stack personal fitness tracking web application inspired by Apple Fitness
 
 🧠 Tech Stack:
 
-- Frontend
+Frontend:
+
 - HTML5, CSS3
 - Vanilla JavaScript
 - Chart.js (data visualization)
 - SVG animations (activity rings)
-- Backend
+  
+Backend:
+
 - Python
 - FastAPI
 - SQLAlchemy ORM
