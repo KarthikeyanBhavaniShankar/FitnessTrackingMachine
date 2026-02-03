@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display";
+  background: radial-gradient(circle at top, #111827, #000);
+  color: white;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.rings {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.ring {
+  text-align: center;
+}
+
+svg {
+  width: 120px;
+  height: 120px;
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+.bg {
+  stroke: #1f2933;
+}
+
+.progress {
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.steps {
+  stroke: #00ff9d;
+}
+
+.workout {
+  stroke: #ff375f;
+}
+
+.calories {
+  stroke: #ff9f0a;
+}
+
+.ring span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chart {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(15px);
+}
+
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #ff375f, #ff9f0a);
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.log-panel {
+  position: fixed;
+  bottom: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20,20,20,0.95);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  transition: bottom 0.4s ease;
+}
+
+.log-panel input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.log-panel button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+}
