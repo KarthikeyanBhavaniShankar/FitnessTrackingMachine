@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <h1>Fitness</h1>
+    <span class="date">Today</span>
+  </header>
+
+  <section class="rings">
+    <div class="ring">
+      <svg viewBox="0 0 120 120">
+        <circle class="bg" cx="60" cy="60" r="50"/>
+        <circle class="progress steps" cx="60" cy="60" r="50"/>
+      </svg>
+      <p>Steps</p>
+      <span id="stepsPercent">0%</span>
+    </div>
+
+    <div class="ring">
+      <svg viewBox="0 0 120 120">
+        <circle class="bg" cx="60" cy="60" r="50"/>
+        <circle class="progress workout" cx="60" cy="60" r="50"/>
+      </svg>
+      <p>Workout</p>
+      <span id="workoutPercent">0%</span>
+    </div>
+
+    <div class="ring">
+      <svg viewBox="0 0 120 120">
+        <circle class="bg" cx="60" cy="60" r="50"/>
+        <circle class="progress calories" cx="60" cy="60" r="50"/>
+      </svg>
+      <p>Calories</p>
+      <span id="caloriesPercent">0%</span>
+    </div>
+  </section>
+
+  <section class="chart">
+    <canvas id="weeklyChart"></canvas>
+  </section>
+
+  <button class="fab" onclick="toggleLog()">＋</button>
+
+  <div class="log-panel" id="logPanel">
+    <input id="steps" placeholder="Steps">
+    <input id="calories" placeholder="Calories">
+    <input id="minutes" placeholder="Workout Min">
+    <button onclick="addActivity()">Log Activity</button>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/script.js"></script>
+</body>
+
+
+</html>
